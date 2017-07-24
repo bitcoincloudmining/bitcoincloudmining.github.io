@@ -1,0 +1,746 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bitcoin</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/tiltedpage-scroll.css" rel="stylesheet" type="text/css">
+    <link href="css/gall.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/geolocapi.js"></script>
+    <script type="text/javascript" src="js/langchange.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ymaps.ready(function () {
+                var geolocation = ymaps.geolocation;
+                $('#cou').html('Ваша страна: ' + geolocation.country);
+                $('#tow').html('Ваш город: ' + geolocation.city);
+                $('#reg').html('Ваш регион: ' + geolocation.region);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".main").tiltedpage_scroll({
+                angle: 80
+            });
+        });
+    </script>
+</head>
+<!--/head-->
+
+<body class="homepage">
+<header id="header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-4">
+                    <div class="top-number">
+                      <!--  <p><i class="fa fa-phone-square"></i> +0123 456 70 90</p>-->
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-8">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                        <div class="search">
+                            <div class="select-area">
+                                <select name="choose" id="choose" class="form-control">
+                                    <option value="nul" selected disabled>Select language</option>
+                                    <option value="opt1">English</option>
+                                    <option value="opt2">Русский</option>
+                                    <!--  <option value="opt3">Other</option>-->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.top-bar-->
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav jqueryOptions opt2">
+                    <li class="active"><a href="/">Главная</a></li>
+                    <li><a href="#about-us">Биткоин</a></li>
+                    <li><a href="#plus">Преимущества</a></li>
+                    <li><a href="#services">Как начать</a></li>
+                    <li><a href="#Crypt">Cryptopay</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav jqueryOptions opt1">
+                  <li class="active"><a href="/">Главная</a></li>
+                  <li><a href="#about-us">Биткоин</a></li>
+                  <li><a href="#plus">Преимущества</a></li>
+                  <li><a href="#services">Как начать</a></li>
+                  <li><a href="#Crypt">Cryptopay</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!--/.container-->
+    </nav>
+    <!--/nav-->
+</header>
+<!--/header-->
+<section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+              <li data-target="#main-slider" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content jqueryOptions opt1">
+                                <h1 class="animation animated-item-1">“Спустя 20 лет биткоин будет столь же
+                                    перспективной платформой, какой сейчас
+                                    является интернет.”</h1>
+
+                                <h2 class="animation animated-item-2"> Марк Андерессен в своем интервью авторитетному
+                                    изданию Вашингтон
+                                    пост.</h2>
+                                <!--  <a class="btn-slide animation animated-item-3" href="#">Read More</a>-->
+                            </div>
+                            <div class="carousel-content jqueryOptions opt2">
+                                <h1 class="animation animated-item-1">“Спустя 20 лет биткоин будет столь же
+                                    перспективной платформой, какой сейчас является интернет.”</h1>
+
+                                <h2 class="animation animated-item-2">
+                                    Марк Андерессен в своем интервью авторитетному изданию Вашингтон пост.</h2>
+                                <!--  <a class="btn-slide animation animated-item-3" href="#">Read More</a>-->
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img1.png" class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+
+            <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content jqueryOptions opt1">
+                                <h1 class="animation animated-item-1">Появление биткоина еще в 1999 году предсказал
+                                    лауреат Нобелевской премии
+                                    по экономике Мильтон Фридман ,</h1>
+
+                                <h2 class="animation animated-item-2"> когда сказал,
+                                    что «Надежная электронная валюта — это единственная вещь, которой сейчас не хватает,
+                                    но она скоро появится».</h2>
+
+                            </div>
+                            <div class="carousel-content jqueryOptions opt2">
+                                <h1 class="animation animated-item-1">Появление биткоина еще в 1999 году предсказал
+                                    лауреат Нобелевской премии
+                                    по экономике Мильтон Фридман ,</h1>
+
+                                <h2 class="animation animated-item-2"> когда сказал,
+                                    что «Надежная электронная валюта — это единственная вещь, которой сейчас не хватает,
+                                    но она скоро появится».</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img2.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+
+            <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content jqueryOptions opt1">
+                                <h1 class="animation animated-item-1">«Мы не сделаем мир лучше при помощи голосов на
+                                    выборах, оружия или танков, но мы можем сделать его лучше при помощи
+                                    криптографического шифрования, 3D-печати, беспилотных летательных аппаратов, дронов
+                                    и биткоина» </h1>
+
+                                <h2 class="animation animated-item-2">Роджер Вер,
+                                    инвестор и активный деятель в сфере криптовалюты.</h2>
+
+                            </div>
+                            <div class="carousel-content jqueryOptions opt2">
+                                <h1 class="animation animated-item-1">«Мы не сделаем мир лучше при помощи голосов на
+                                    выборах, оружия или танков, но мы можем сделать его лучше при помощи
+                                    криптографического шифрования, 3D-печати, беспилотных летательных аппаратов, дронов
+                                    и биткоина»</h1>
+
+                                <h2 class="animation animated-item-2"> Роджер Вер,
+                                    инвестор и активный деятель в сфере криптовалюты.</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img3.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+            <div class="item" style="background-image: url(images/slider/bg5.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content jqueryOptions opt1">
+                                <h1 class="animation animated-item-1">
+                                  «Мы не сделаем мир лучше при помощи голосов на выборах, оружия или танков, но мы можем сделать его лучше при помощи криптографического шифрования, 3D-печати, беспилотных летательных аппаратов, дронов и биткоина».</h1>
+
+                                <h2 class="animation animated-item-2">   Роджер Вер, инвестор и активный деятель в сфере криптовалюты.</h2>
+
+                            </div>
+                            <div class="carousel-content jqueryOptions opt2">
+                                <h1 class="animation animated-item-1">«Мы не сделаем мир лучше при помощи голосов на выборах, оружия или танков, но мы можем сделать его лучше при помощи криптографического шифрования, 3D-печати, беспилотных летательных аппаратов, дронов и биткоина». </h1>
+
+                                <h2 class="animation animated-item-2">  Роджер Вер, инвестор и активный деятель в сфере криптовалюты.</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="images/slider/img5.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.item-->
+        </div>
+        <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+        <i class="fa  fa-bitcoin"></i>
+    </a>
+    <a class="next hidden-xs" href="#main-slider" data-slide="next">
+        <i class="fa  fa-bitcoin"></i>
+    </a>
+</section>
+<!--/#main-slider-->
+<!--screens-->
+<section id="feature">
+    <div class="container" id="about-us">
+        <div class="center wow fadeInDown jqueryOptions opt2">
+            <h2>Что же такое биткоин?</h2>
+
+            <p class="lead">Если отбросить все технические термины, можно понять, что Bitcoin это компьтерная валюта,
+                которую люди используют с 2009 года покупая на нее все, от мяса до домов. </p>
+        </div>
+        <div class="center wow fadeInDown jqueryOptions opt1">
+                             <H2>Что же такое биткоин?</H2>
+                             <P class="lead"> Если отбросить все технические термины, можно понять,
+            что Bitcoin это компьтерная валюта, которую люди используют с 2009 года покупая на нее все, от мяса до
+            домов.
+        </P>
+                        
+        </div>
+        <div class="center wow fadeInDown jqueryOptions opt3">
+                             <H2>
+
+        </H2>
+                             <P class="lead"> </P>
+        </div>
+        <div class="row">
+            <div class="features">
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Использование этой валюты анонимно. В то время как все транзакции публичны,
+                            личность пользователей остается анонимной, что отвечает потребностям современного общества.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Использование этой валюты анонимно. В то время как все транзакции публичны,
+                            личность пользователей остается анонимной, что отвечает потребностям современного общества.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>В системе биткоин нет сумасшедшей комиссии, которую взимают третьи стороны,
+                            например банки при переводе денег с одного счета на другой.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>В системе биткоин нет сумасшедшей комиссии, которую взимают третьи стороны,
+                            например банки при переводе денег с одного счета на другой.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Это по настоящему всемирная платежная система. Это децентрализованность — мы не зависим
+                            от какой-либо управляющей компании, наши счета нельзя заблокировать, наши переводы нельзя откатить.
+                        </h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Это по настоящему всемирная платежная система. Это децентрализованность —
+                            мы не зависим от какой-либо управляющей компании, наши счета нельзя заблокировать,
+                            наши переводы нельзя откатить.
+                        </h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Использование биткоинов не является нарушением закона. Некоторые страны положительно реагируют на развитие платежной системы и позволяют своим клиентам связать карту VISA со своим счетом Bitcoin.
+                        </h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Использование биткоинов не является нарушением закона. Некоторые страны положительно реагируют на развитие платежной системы и позволяют своим клиентам связать карту VISA со своим счетом Bitcoin.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!--/.services-->
+        </div>
+        <!--/.row-->
+        <div class="center wow fadeInDown  jqueryOptions opt2">
+            <p class="lead">Процесс выпуска биткоинов называется «майнинг» — это единственный способ получения Bitcoin, построенный на решении компьютерами математических задач. Заниматься майнингом может быть экономически выгодно в зависимости от разных факторов: курса BTC к доллару и евро, стоимости электроэнергии, мощности имеющегося компьютера и т.д. Для майнинга требуются очень большие вычислительные мощности и в определенный момент добыча Bitcoin на персональных компьютерах становится экономически невыгодной. В этот момент становится выгоднее арендовать вычислительные мощности. Если в двух словах – это аренда мощностей суперкомпьютера, освобождающий вас от затрат на электричество, круглосуточный контроль, программное обеспечение и других расходов, связанных с классическим “майнингом”. </p>
+        </div>
+        <div class="center wow fadeInDown  jqueryOptions opt1">
+            <p class="lead">Процесс выпуска биткоинов называется «майнинг» — это единственный способ получения Bitcoin, построенный на решении компьютерами математических задач. Заниматься майнингом может быть экономически выгодно в зависимости от разных факторов: курса BTC к доллару и евро, стоимости электроэнергии, мощности имеющегося компьютера и т.д. Для майнинга требуются очень большие вычислительные мощности и в определенный момент добыча Bitcoin на персональных компьютерах становится экономически невыгодной. В этот момент становится выгоднее арендовать вычислительные мощности. Если в двух словах – это аренда мощностей суперкомпьютера, освобождающий вас от затрат на электричество, круглосуточный контроль, программное обеспечение и других расходов, связанных с классическим “майнингом”.</p>
+        </div>
+
+    </div>
+    <!--/.container-->
+</section>
+<!--/#feature-->
+<section id="recent-works">
+    <div class="container">
+        <div class="center wow fadeInDown  jqueryOptions opt2">
+            <h2 class="less">Проведя огромную работу, компания HashCoins LLC разработала сервис удаленного управления крипто-оборудованием -<a href="https://hashflare.io/?utm_source=cryptmaster"> облачный майнинг HashFlare.io.</a></h2>
+
+            <p class="lead">Командой профессионалов компании Hashcoins, ведущей с 2013 года анализ рынка криптовалют, разработан специальный финансовый инструмент: Hashflare, который позволяет всем без исключения заработать на генерации-добыче, “майнинге” без погружения в технические детали добычи и работы с криптовалютами. Этот сервис создан с целью сделать возможность работы на рынке облачного “майнинга” более удобной и надежной. </p>
+
+            <p class="lead">HashFlare относится как раз к той категории сервисов облачного “майнинга”, которые создаются профессионалами всерьез и надолго. Такие проекты не продают «воздух», предлагаемые ими мощности относятся к действительно имеющимся физическим мощностям “майнинга” биткоин.
+            </p>
+
+            <p class="lead">HashCoins основана в 2013 году Сергеем Потапенко. Компания разрабатывает и производит оборудование для добычи (“майнинга”) криптовалюты. Офис HashCoins расположен в городе Таллинн, Эстония. Компания специализируется на создании новых технологий в области ASIC оборудования для развития безопасной и распространённой децентрализованной глобальной сети Биткоин.
+                Запуск сервиса облачного “майнинга” криптовалют компанией, которая специализируется на производстве ASIC оборудования, довольно таки логичный шаг. Возможность не арендовать, а именно купить мощности “майнинга” электронной валюты напрямую у майнинговой компании, созданной HashCoins, не может не радовать. </p>
+        </div>
+        <div class="center wow fadeInDown  jqueryOptions opt1">
+            <h2  class="less">Проведя огромную работу, в компании HashCoins LLC был разработан сервис удаленного управления
+                криптооборудованием
+                -<a href="https://hashflare.io/?utm_source=cryptmaster"> облачный майнинг HashFlare.io.</a></h2>
+
+            <p class="lead">Командой профессионалов компании Hashcoins, ведущей с 2013 года анализ рынка криптовалют, разработан специальный финансовый инструмент: Hashflare, который позволяет всем без исключения заработать на генерации-добыче, “майнинге” без погружения в технические детали добычи и работы с криптовалютами. Этот сервис создан с целью сделать возможность работы на рынке облачного “майнинга” более удобной и надежной. </p>
+
+            <p class="lead">HashFlare относится как раз к той категории сервисов облачного “майнинга”, которые создаются профессионалами всерьез и надолго. Такие проекты не продают «воздух», предлагаемые ими мощности относятся к действительно имеющимся физическим мощностям “майнинга” биткоин.
+            </p>
+
+            <p class="lead">HashCoins основана в 2013 году Сергеем Потапенко. Компания разрабатывает и производит оборудование для добычи (“майнинга”) криптовалюты. Офис HashCoins расположен в городе Таллинн, Эстония. Компания специализируется на создании новых технологий в области ASIC оборудования для развития безопасной и распространённой децентрализованной глобальной сети Биткоин.
+                Запуск сервиса облачного “майнинга” криптовалют компанией, которая специализируется на производстве ASIC оборудования, довольно таки логичный шаг. Возможность не арендовать, а именно купить мощности “майнинга” электронной валюты напрямую у майнинговой компании, созданной HashCoins, не может не радовать.</p>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<!--/#recent-works-->
+<section id="feature">
+    <div class="container" id="plus">
+        <div class="center wow fadeInDown">
+            <h2>К главным плюсам Hashflare можно отнести:</h2>
+        </div>
+        <div class="row">
+            <div class="features">
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Hashflare - дочерняя компания Hashcoins, известного производителя майнеров с собственным дата-центром с оборудованием для “майнинга”</h3>
+                    </div>
+                    <div class="feature-wrap jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Hashflare - дочерняя компания Hashcoins, известного производителя майнеров с собственным дата-центром с оборудованием для “майнинга”</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>К оплате принимаются банковские карты и переводы, Webmoney, биткойны (в том числе с вашего баланса на сервисе), EmerCoin и Payeer + полная прозрачность платы за обслуживание по контрактам Scrypt - отчет за каждые сутки.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>К оплате принимаются банковские карты и переводы, Webmoney, биткойны (в том числе с вашего баланса на сервисе), EmerCoin и Payeer + полная прозрачность платы за обслуживание по контрактам Scrypt - отчет за каждые сутки.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3> Мгновенные выплаты по запросу - буквально в течение нескольких минут. Минимальная комиссия на вывод средств.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3> Мгновенные выплаты по запросу - буквально в течение нескольких минут. Минимальная комиссия на вывод средств.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Бессрочный контракт - Вы покупаете мощности SHA и Scrypt навсегда, а не арендуете их на месяц или год, как на других подобных сервисах.
+                        </h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Бессрочный контракт - Вы покупаете мощности SHA и Scrypt навсегда, а не арендуете их на месяц или год, как на других подобных сервисах.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!--/.services-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#feature-->
+<section id="services" class="service-item">
+    <div class="container">
+        <div class="center wow fadeInDown  jqueryOptions opt2">
+            <h2>Для начала работы необходимо выполнить два простых шага:</h2>
+
+
+        </div>
+        <div class="center wow fadeInDown  jqueryOptions opt1">
+            <h2>Для начала работы необходимо выполнить два простых шага:</h2>
+
+
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<!--/#services-->
+
+<section id="feature" class="transparent-bg">
+    <div class="container">
+        <div class="get-started center wow fadeInDown  jqueryOptions opt2">
+            <h2>Шаг первый</h2>
+
+            <p class="lead">Регистрация на сайте <a href="/">#РЕФ_ССЫЛЬ</a>, указываем свои данные, не забываем указать
+                страну и подтвердить
+                свой аккаунт.</p>
+
+            <div class="request">
+                <h4><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forward&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </h4>
+            </div>
+        </div>
+        <div class="get-started center wow fadeInDown  jqueryOptions opt1">
+            <h2>Шаг первый</h2>
+
+            <p class="lead">Регистрация на сайте <a href="/">#РЕФ_ССЫЛЬ</a>, указываем свои данные, не забываем указать
+                страну и подтвердить
+                свой аккаунт.</p>
+
+            <div class="request">
+                <h4><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forward&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<!-- -->
+<div class="main">
+    <section class="page17">
+        <div class="page_container">
+        </div>
+    </section>
+</div>
+<section id="feature" class="transparent-bg">
+    <div class="container">
+        <div class="get-started center wow fadeInDown  jqueryOptions opt1">
+            <h2>Шаг второй</h2>
+
+            <p class="lead">выбираем в меню справа “Купить Хешрейт” и покупаем мощность, интересующего нас алгоритма. Оплачиваем удобным для Вас способом и видим уже купленую мощность в инфографике в личном кабинете.
+</p>
+
+            <div class="request">
+                <h4><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forward&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </h4>
+            </div>
+        </div>
+        <div class="get-started center wow fadeInDown  jqueryOptions opt2">
+            <h2>Шаг второй</h2>
+
+            <p class="lead">выбираем в меню справа “Купить Хешрейт” и покупаем мощность, интересующего нас алгоритма. Оплачиваем удобным для Вас способом и видим уже купленую мощность в инфографике в личном кабинете.
+</p>
+
+            <div class="request">
+                <h4><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forward&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </h4>
+            </div>
+        </div>
+
+    </div>
+    <!--/.container-->
+</section>
+<!--/#feature-->
+
+<div class="main">
+    <section class="page2">
+        <div class="page_container">
+        </div>
+    </section>
+    <section class="page13">
+        <div class="page_container">
+        </div>
+    </section>
+    <section class="page15">
+        <div class="page_container">
+        </div>
+    </section>
+    <section class="page16">
+        <div class="page_container">
+        </div>
+    </section>
+
+</div>
+<section id="recent-works">
+    <div class="container" id="Crypt">
+        <div class="center wow fadeInDown  jqueryOptions opt2">
+            <h2 class="less">Для еще большего повышения эффективности своей мощности в личном кабинете можно настроить список пулов и подобрать максимально эффективную для себя комбинацию.</h2>
+
+            <h2 class="less">  После, для вывода средств нужно будет указать свой BTC кошелек на Cryptopay(#ссылка на рефку криптопей).</h2>
+
+
+            <p class="lead">Система CRYPTOPAY состоит из BitCoin-кошелька и выпускаемых к нему дебетовых карт VISA, которые вы можете использовать в любой стране в любом банкомате, поддерживающим VISA, для снятия наличных. Или оплачивать этими картами покупки как в реальных заведениях, так и в Интернете (в этом случае проще и значительно дешевле выпустить виртуальную карту). Всё абсолютно легально. Регистрация бесплатная, сейчас к тому же действует программа привлечения клиентов, которая даёт скидку в 25% на дальнейший выпуск карт и бонусы.
+ </p>
+
+            <p class="lead">Вы перечисляете биткойны на свой кошелёк в CRYPTOPAY, конверсия в реальные деньги происходит автоматически по выгодному курсу (выгоднее, чем в обменниках) + берётся незначительная комиссия. Также внутри своего кошелька Вы можете обменять биткойны на доллары и евро, чтобы сохранять их там, обезопасив от скачков курса.
+</p>
+
+            <p class="lead">На момент запуска системы стоимость выпуск реального пластика стоил в районе 33 долларов, виртуальной карты - меньше двух долларов. По приложенной ссылке эмиссия пластиковой дебетовой карты будет дешевле.</p>
+        </div>
+        <div class="center wow fadeInDown  jqueryOptions opt1">
+            <h2  class="less">Для еще большего повышения эффективности своей мощности в личном кабинете можно настроить список пулов и подобрать максимально эффективную для себя комбинацию.</h2>
+  <h2 class="less">  После, для вывода средств нужно будет указать свой BTC кошелек на Cryptopay(#ссылка на рефку криптопей).</h2>
+            <p class="lead">Система CRYPTOPAY состоит из BitCoin-кошелька и выпускаемых к нему дебетовых карт VISA, которые вы можете использовать в любой стране в любом банкомате, поддерживающим VISA, для снятия наличных. Или оплачивать этими картами покупки как в реальных заведениях, так и в Интернете (в этом случае проще и значительно дешевле выпустить виртуальную карту). Всё абсолютно легально. Регистрация бесплатная, сейчас к тому же действует программа привлечения клиентов, которая даёт скидку в 25% на дальнейший выпуск карт и бонусы.
+ </p>
+
+            <p class="lead">Вы перечисляете биткойны на свой кошелёк в CRYPTOPAY, конверсия в реальные деньги происходит автоматически по выгодному курсу (выгоднее, чем в обменниках) + берётся незначительная комиссия. Также внутри своего кошелька Вы можете обменять биткойны на доллары и евро, чтобы сохранять их там, обезопасив от скачков курса.
+</p>
+
+            <p class="lead">На момент запуска системы стоимость выпуск реального пластика стоил в районе 33 долларов, виртуальной карты - меньше двух долларов. По приложенной ссылке эмиссия пластиковой дебетовой карты будет дешевле.</p>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<section id="feature">
+    <div class="container" id="Crypt">
+        <div class="center wow fadeInDown">
+            <h2>К главным плюсам сисемы Cryptopay можно отнести:</h2>
+        </div>
+        <div class="row">
+            <div class="features">
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap jqueryOptions opt2">
+                        <i class="fa  fa-bitcoin"></i>
+
+                        <h3>Регистрация на Cryptopay бесплатна.</h3>
+                    </div>
+                    <div class="feature-wrap jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Регистрация на Cryptopay бесплатна.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Возможность пользования виртуальной картой без выпуска пластиковой и пользоваться ей как обычным кошельком.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Возможность пользования виртуальной картой без выпуска пластиковой и пользоваться ей как обычным кошельком.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3> Двухуровневая аутентификация 2FA.</h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3> Двухуровневая аутентификация 2FA.</h3>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap  jqueryOptions opt2">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Реферальные программы.
+                        </h3>
+                    </div>
+                    <div class="feature-wrap  jqueryOptions opt1">
+                        <i class="fa  fa-plus"></i>
+
+                        <h3>Реферальные программы.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!--/.services-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--
+<div class="main">
+    <section class="page4">
+
+        <div class="page_container">
+        </div>
+    </section>
+
+</div>
+-->
+
+<!--end screens-->
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                &copy; 2016
+                All Rights Reserved.
+            </div>
+            <div class="col-sm-6">
+                <ul class="pull-right  jqueryOptions opt1">
+
+                    <li ><a href="/">Главная</a></li>
+                    <li><a href="#about-us">Биткоин</a></li>
+                    <li><a href="#plus">Преимущества</a></li>
+                    <li><a href="#services">Как начать</a></li>
+                    <li><a href="#Crypt">Cryptopay</a></li>
+                </ul>
+                <ul class="pull-right  jqueryOptions opt2">
+                  <li><a href="/">Главная</a></li>
+                  <li><a href="#about-us">Биткоин</a></li>
+                  <li><a href="#plus">Преимущества</a></li>
+                  <li><a href="#services">Как начать</a></li>
+                  <li><a href="#Crypt">Cryptopay</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<p id="back-top">
+    <a href="#top"><span></span>Top</a>
+</p>
+<!--/#footer-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#back-top").hide();
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-top').fadeIn();
+                } else {
+                    $('#back-top').fadeOut();
+                }
+            });
+            $('#back-top a').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    });
+</script>
+</body>
+</html>
